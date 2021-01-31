@@ -26,9 +26,9 @@ internet_on()
 
 print("""HTTP status codes: 200 OK, 301 Moved Permanently, 302 Found (Moved Temporarily), 401 Unauthorized, 403 Forbidden, 404 Not Found, 410 Gone, 500 Internal Server Error, 503 Service Unavailable""")
 
-#next steps
-#first check if internet is connected
+#next steps:
+#1. check if works on laptop computer
+#2. first check if internet is connected
   #if so, check if corpus search returns results
     #if so, perform lemmatization and other analyses
-
-#gui offers Chinese corpus database clickboxes
+#3. gui offers Chinese corpus database clickboxes
