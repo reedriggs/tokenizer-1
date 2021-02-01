@@ -1,3 +1,16 @@
+"""
+Goals: 
+    - Create a list from text on a corpus website following a search
+    - inform user of problems at which step of connectivity to corpus site
+Steps:
+    - first check if internet is connected via Bing, Yahoo, Duckduckgo
+    - if so, check if corpus search returns results
+    - if so, create a list for various analyses
+Next steps: 
+    - check if and which corpus sites block webscraping
+    - gui offers Chinese corpus database cptions via clickboxes
+"""
+
 import requests
 #import urllib
 from urllib.request import urlopen
@@ -71,24 +84,3 @@ output = target_text.text
 print(output)
 
 
-
-#def internet_on():
-  #for timeout in [1,5,10,15]:
-    #try:
-      #response = requests.get('http://google.com', timeout=timeout)
-      #print("response code: " + str(response.status_code))
-      #return True
-    #except urllib2.URLError as err: pass
-  #return False
-  #print("Could not connect" + "\n" + "HTTP status codes: 200 OK, 301 Moved Permanently, 302 Found (Moved Temporarily), 401 Unauthorized, 403 Forbidden, 404 Not Found, 410 Gone, 500 Internal Server Error, 503 Service Unavailable")
-
-#internet_on()
-
-#print("\n" + "HTTP status codes: 200 OK, 301 Moved Permanently, 302 Found (Moved Temporarily), 401 Unauthorized, 403 Forbidden, 404 Not Found, 410 Gone, 500 Internal Server Error, 503 Service Unavailable")
-
-
-#first check if internet is connected
-  #if so, check if corpus search returns results
-    #if so, perform lemmatization and other analyses
-
-#gui offers Chinese corpus database clickboxes
