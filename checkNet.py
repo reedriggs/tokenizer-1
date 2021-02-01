@@ -33,7 +33,8 @@ def CheckCorpusSite(corpus_link):
     link_b = str(corpus_link)
     try:
       response = requests.get(link_b)
-      #print("response code: " + str(response.status_code))
+      print("response code: " + str(response.status_code))
+      print("Connected to " + str(corpus_link))
       return True
     except requests.ConnectionError:
       print("Could not connect to corpus site")
@@ -44,7 +45,8 @@ def CheckCorpusSite(corpus_link):
 
 #first test to see if the operations above will work and in in their intended order
 BLCU_corpus_site = """http://202.112.195.8:8089/ccir_login?input=*"""
-CheckCorpusSite(BLCU_corpus_site)
+sinica_ch = "https://www.sinica.edu.tw/ch"
+CheckCorpusSite(sinica_ch)
 
 def internet_on():
   import requests
